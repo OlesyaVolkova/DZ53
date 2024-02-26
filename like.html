@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Like</title>
+    </head>
+
+<body style="text-align: center;">
+
+    <button id="btn"><img src="like.png" class="image-button">  Like  <span id="display">0</span></button>
+
+    <script type="text/javascript">
+        let count = 0;
+        let btn = document.getElementById("btn");
+        let disp = document.getElementById("display");
+         
+        btn.onclick = function () {
+                    count++;
+        disp.innerHTML = count;
+        }
+    </script>
+</body>
+</html>
